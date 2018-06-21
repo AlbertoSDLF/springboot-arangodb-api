@@ -13,9 +13,9 @@ import com.asitc.neo4japi.repository.car.Car;
 import com.asitc.neo4japi.repository.person.Person;
 
 @RelationshipEntity(type = "IS_OWNER")
-public class Owner {
+public class Ownership {
 
-	@Property
+	@Property(name = "acquisition_date")
 	private Date acquisitionDate;
 	@EndNode
 	private Car car;
