@@ -5,7 +5,7 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.Property;
 import org.neo4j.ogm.annotation.Relationship;
 
-import com.asitc.neo4japi.repository.person.relationship.Ownership;
+import com.asitc.neo4japi.relationship.Ownership;
 
 public class Person {
 

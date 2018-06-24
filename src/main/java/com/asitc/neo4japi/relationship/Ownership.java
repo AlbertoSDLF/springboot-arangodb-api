@@ -1,4 +1,4 @@
-package com.asitc.neo4japi.repository.person.relationship;
+package com.asitc.neo4japi.relationship;
 
 import java.util.Date;
 

@@ -1,8 +1,20 @@
 spring:
   data:
     neo4j:
-      uri: bolt://127.0.0.1:32775
+      uri: bolt://127.0.0.1:32772
       username: neo4j
       password: password
   jackson:
     property-naming-strategy: SNAKE_CASE
+  rabbitmq:
+    host: 127.0.0.1
+    port: 32773
+
+mq:
+  application: springboot-neo4j-api
+  exchange: (AMQP default)
+  queue: api-queue
+
+logging:
+  level:
+    root: INFO
