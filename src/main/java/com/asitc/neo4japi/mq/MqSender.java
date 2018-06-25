@@ -21,8 +21,8 @@ public class MqSender {
 	private RabbitTemplate rabbitTemplate;
 
 	// @Scheduled(fixedDelay = 3000L)
-	public void sendMessage() {
-		final MqMessage message = new MqMessage(this.applicationName, "", "", "", "");
+	public void sendMessage(final MqMessage message) {
+		message.setApplication(this.applicationName);
 		this.rabbitTemplate.convertAndSend(this.exchangeName, this.queueName, message);
 	}
 }

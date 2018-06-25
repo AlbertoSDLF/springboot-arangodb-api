@@ -55,6 +55,14 @@ public class MqMessage implements Serializable {
 		this.parameters = parameters;
 	}
 
+	public String getResource() {
+		return this.resource;
+	}
+
+	public void setResource(final String resource) {
+		this.resource = resource;
+	}
+
 	@Override
 	public String toString() {
 		return "Message [application=" + this.application + ", body=" + this.body + ", method=" + this.method
